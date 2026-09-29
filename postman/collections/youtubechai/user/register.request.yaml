@@ -2,4 +2,39 @@ $kind: http-request
 description: ""
 url: "{{server}}/users/register"
 method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: fullName
+      value: Ayush
+      description: ""
+      disabled: false
+    - type: file
+      key: avatar
+      src:
+        - postman-cloud:///1f1b7805-4dcc-4f10-aadf-11d61d7ea4b5
+      description: ""
+      disabled: false
+    - type: text
+      key: username
+      value: ayush760
+      description: ""
+      disabled: false
+    - type: text
+      key: password
+      value: "123456"
+      description: ""
+      disabled: false
+    - type: file
+      key: coverImage
+      src:
+        - postman-cloud:///1f1b7805-6257-4bb0-9acf-58984e1e64b7
+      description: ""
+      disabled: false
+    - type: text
+      key: email
+      value: ayush@gmail.com
+      description: ""
+      disabled: false
 order: 1790277432747
